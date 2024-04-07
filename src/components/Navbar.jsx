@@ -1,5 +1,5 @@
 import Link from "next/link";
-import "./Navbar.css"
+import "@/components/Navbar"
 export default function Navbar() {
   return (
     <nav className="navbar py-5">
