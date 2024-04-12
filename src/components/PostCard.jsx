@@ -1,9 +1,12 @@
 "use client";
 
 import Link from "next/link";
+import { useParams } from "next/navigation";
 
 // React Client Component
 export default function PostCard({ post }) {
+  const params=useParams();
+  console.log(params);
   return (
     <div className="bg-gray-950 p10">
       <Link href={`posts/${post.id}`}>
